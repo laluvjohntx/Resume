@@ -1,0 +1,151 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+\usepackage{hyperref}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerlastnamestyle{Lalu John} \\
+	\vspace{2mm}
+	\href {mailto:laluvjohn@gmail.com} {\faEnvelope\ Email} | {\faMobile\ (214) 606-0249} | {\faMapMarker\ Wylie, TX} |  \href {https://github.com/laluvjohntx} {\faGithubSquare\ GitHub} |  \href {https://www.linkedin.com/in/lalu-john-9957438b/} {\faLinkedinSquare\ Linkedin}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Bachelor of Science in Computer Science}
+	{University of Texas at Dallas}
+	{Richardson, TX}
+	{Sep 2012 – May 2016}
+	{Completed coursework in Data Security, Human Computer Interactions, Operating System Concepts, as well as various programming courses. Published findings from a semester project involving an andoid application that securely stored encrypted passwords on a cloud infrastructure. \newline
+    	Graduated with a GPA of \textbf{3.87}, Magna Cum Laude}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Professional Experience}
+\begin{cventries}
+	\cventry
+	{Software Developer}
+	{State Farm}
+	{Richardson, TX}
+	{Jun 2016 – Present}
+	{Completed a comprehensive training course that covered Object Oriented Programming, SOLID principles, design patterns, and Spring Framework. Worked across multiple teams in a scaled agile environment. Projects include:
+	\linebreak[4] \vspace{1mm}
+		\begin{cvitems}
+		\item {RESTful APIs using microservice architecture utilizing Springboot. SwaggerUI and automated test suites were included for each service to increase efficiency.}
+		\item {Spring batch projects that consume thousands of records, enriches them, and creates flat files as output for downstream.}
+		\item {Proof of concept efforts to assist teams into adopting new Devops standards. These efforts have helped in migrating components to a new PaaS solutions quickly and efficiently.}
+		\end{cvitems}}
+
+	\cventry
+	{Systems Engineer CO-OP}
+	{Rockwell Collins}
+	{Richardson, TX}
+	{Jan 2016 – Jun 2016}
+	{\begin{cvitems}
+		\item {Created Python scripts to automate testing for critcal navigation and guidance systems.}
+		\item {Configured a Bamboo server for continous delivery of code, and provided presentations promoting continuous delivery across areas }
+		\end{cvitems}}
+
+	\cventry
+	{Development Intern}
+	{Tyler Technologies}
+	{Plano, TX}
+	{Jun 2015 – Aug 2015}
+	{\begin{cvitems}
+		\item {Created single page web applications using ASP.NET, C\#, and AngularJS to be deployed and used by clients.}
+		\item {Incorporated Bootstrap  for achieving an appealing and responsive interface. This made consumer feedback easier to implement.}
+		\item {Participated in Agile ceremonies including sprint demos every two weeks with the end user}
+		\end{cvitems}}
+
+\end{cventries}
+
+\cvsection{Programming Experience}
+
+\begin{cventries}
+\vspace{-2.5mm}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ Java, Javascript, Python, C\#, C++, C, Groovy, Haskell}} \\
+		Data Technologies:  & {\skill{ MySQL, PostgreSQL, Oracle SQL, IBM MQ, Rabbit MQ, ElasticSearch}} \\
+		Frameworks:  & {\skill{ Spring, GatsbyJS, ReactJS, AngularJS, ASP.NET}} \\
+		Version Control:  & {\skill{ SVN, GIT}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{In Progress}
+	{Wedding Page}
+	{}
+	{}
+	{Built with GatsbyJS, Reactstrap,and Spring-React, this web application is meant to be a platform for friends and families to view event details, venue, as well as get an insight into the bride and the groom. It is a surprise for my fiance, and aims to be completed by January 31st, 2019.}	
+	
+\end{cventries}
+
+\begin{cventries}
+	\cventry
+	{Completed}
+	{Inmate Tracker Mobile App}
+	{}
+	{}
+	{This application was developed as part of my senior design project for Tyler Technologies. It is an android application created for prison guards to keep track of inmates efficiently rather than using pen and paper.  It logs activities by guards, provides a timer to alert them of periodic scans, and has an elegant and responsive interface to alert them on scans coming up. This project was awarded second prize out of all the senior design projects from May 2016. }	
+	\vspace{-5mm}
+\end{cventries}
+
+\ 
+\end{document}
